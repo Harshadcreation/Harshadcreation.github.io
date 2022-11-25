@@ -1,0 +1,51 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header
+{
+	width: 100%;
+	background-image:url(Background.jpg);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+nav{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	font-weight: bolder;
+	color: white;
+	background-color: royalblue;
+	height: 10vh;
+}
+
+table{
+	width: 70%;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 25px;
+}
+
+h1{
+	width: 25%;
+	font-size: 30px;
+	background: royalblue;
+	color:white;
+}
+
+.sub
+{
+	color: royalblue;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	border: solid black 4px ;
+}
+
+
+

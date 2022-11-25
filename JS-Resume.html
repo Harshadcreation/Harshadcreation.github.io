@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Resume Builder</title>
+	<link rel="stylesheet" href="Resume.css">
+	<link rel="icon" href="stamp.jpg">
+	<script>
+		function fun() {
+			//Name
+			var name1 = document.getElementById("name").value;
+			localStorage.setItem("fullname", name1);
+
+			//Email
+			var emailid = document.getElementById("email").value;
+			localStorage.setItem("eid", emailid);
+
+			//Mobile Number 
+			var mono = document.getElementById("no").value;
+			localStorage.setItem("phno", mono);
+
+			//Address
+			var add = document.getElementById("address").value;
+			localStorage.setItem("addr", add);
+
+			//Date
+			var datee = document.getElementById("date").value;
+			localStorage.setItem("date1", datee);
+
+			//Gender
+			var gen=document.getElementsByName("r");
+			if (gen[0].checked) {
+				var mm = document.getElementById("male").value;
+				localStorage.setItem("js", mm);
+			} 
+			else 
+			{
+				var mm = document.getElementById("female").value;
+				localStorage.setItem("js", mm);
+			}
+
+			//Language
+			var check=document.getElementsByName("c");
+			var str="";
+			if(check[0].checked)
+				{
+					str = str+" English ";
+				}
+			if(check[1].checked)
+				{
+					str = str+" Marathi ";
+				}
+			if(check[2].checked)
+				{
+					str = str+" Hindi ";
+				}
+				localStorage.setItem("hh", str);
+			
+			//-----------------------------------------------------
+			//Profile
+			var p1 = document.getElementById("profile").value;
+			localStorage.setItem("pro",p1);
+			
+			
+			var p2 = document.getElementById("edu").value;
+			localStorage.setItem("edu",p2);
+			
+			var p3 = document.getElementById("exp").value;
+			localStorage.setItem("ex",p3);
+			
+			var p4 = document.getElementById("typing-speed").value;
+			localStorage.setItem("typ",p4);
+			
+			var p5 = document.getElementById("pm").value;
+			localStorage.setItem("pmm",p5);
+			
+			var p6 = document.getElementById("tl").value;
+			localStorage.setItem("tll",p6);
+			
+			
+			
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			Resume Builder
+		</nav><br><br>
+		<form action="Form2.html" target="_self">
+			<center>
+			<h1>Personal Information </h1> <br>
+			<table>
+				<tr>
+					<td><label for="name">Enter Full Name</label></td>
+					<td><input type="text" placeholder="First Middle Surname" id="name" size="40"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Enter Email-ID</label></td>
+					<td><input type="email" placeholder="         @gmail.com" id="email" size="40"></td>
+				</tr>
+				<tr>
+					<td><label for="no">Enter Mobile NO</label></td>
+					<td><input type="text" placeholder="Enter 10 digiet NO" id="no" size="40"></td>
+				</tr>
+				<tr>
+					<td><label for="address">Enter Address</label></td>
+					<td><textarea id="address" rows="4" cols="40" placeholder="Plat No.&#10;Street Name &#10;City Name &#10;Pincode &#10;"></textarea></td>
+				</tr>
+				<tr>
+					<td><label for="date">Date Of Birth</label></td>
+					<td><input type="date" id="date" size="40"></td>
+				</tr>
+				<tr>
+					<td><label>Select Gender</label></td>
+					<td><input type="radio" name="r" value="Male" id="male"><label for="male">Male</label>
+						<input type="radio" name="r" value="Female" id="female"><label for="female">Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="lang">Language Known</label></td>
+					<td><input type="checkbox" name="c" id="eng"><label for="eng">English</label>
+						<input type="checkbox" name="c" id="mar"><label for="mar">Marathi</label>
+						<input type="checkbox" name="c" id="hin"><label for="hin">Hindi</label>
+					</td>
+				</tr>
+			</table>
+<br><br>
+			<h1>About Yourself</h1><br>
+			<table>
+				<tr>
+					<td><label for="profile">Profile</label></td>
+					<td><textarea id="profile" cols="40" rows="4" placeholder="Enter Here"></textarea></td>
+				</tr>
+				<tr>
+					<td><label for="">Education </label></td>
+					<td><textarea  id="edu"cols="40" rows="4" placeholder="Enter Here"></textarea></td>
+				</tr>
+				<tr>
+					<td><label for="">Professinal Exprience</label></td>
+					<td><textarea id="exp" cols="40" rows="4" placeholder="Enter Here"></textarea></td>
+				</tr>
+				<tr>
+					<td><label for="">Key Skills     </label></td>
+					<td>
+						<label for="">Typing Speed    </label>
+						<input type="range" id="typing-speed"><br>
+
+						<label for="">Problem Solving </label>
+						<input type="range" id="pm"><br>
+
+						<label for="">Team Leadership</label>
+						<input type="range" id="tl">
+					</td>
+				</tr>
+			</table>
+			<br><br><br>
+			<input type="submit" value="Submit Form" onclick="fun()" class="sub"><br><br><br><br><br><br><br>
+			</center>
+		</form>
+	</header>
+</body></html>

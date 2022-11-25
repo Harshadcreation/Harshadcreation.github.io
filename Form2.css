@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	font-weight: bolder;
+	color: white;
+	background-color: royalblue;
+	height: 10vh;
+}
+
+html{
+	background-image: url(back.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+table
+{
+	width: 50%;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	font-size: 25px;
+	border: solid royalblue 5px;
+}
+ 
+table td{
+	border: solid black 2px; 
+	padding: 5px;
+}
+
+
+h1{
+	background-image: url(stamp.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border: solid black 3px;
+}
+
+
+
+
+
+
+
+
